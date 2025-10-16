@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azzufar Management System - Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="inline-block bg-opacity-10 backdrop-blur-lg rounded-full p-6 mb-6">
+                <img src="/AZZUFAR.png" alt="Azzufar Logo" >
+            </div>
+            <h1 class="text-5xl font-bold text-white mb-4">Azzufar Management System</h1>
+            <p class="text-xl text-blue-100">Sistem Manajemen Azzufar Modern & Efisien</p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-opacity-20 transition transform hover:scale-105">
+                <i class="fas fa-user-graduate text-4xl text-blue-200 mb-4"></i>
+                <h3 class="text-xl font-bold text-white mb-2">Data Santri</h3>
+                <p class="text-blue-100 text-sm">Manajemen data santri</p>
+            </div>
+
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-opacity-20 transition transform hover:scale-105">
+                <i class="fas fa-chalkboard-teacher text-4xl text-teal-200 mb-4"></i>
+                <h3 class="text-xl font-bold text-white mb-2">Jadwal</h3>
+                <p class="text-blue-100 text-sm">Kelola informasi jadwal pembelajaran</p>
+            </div>
+
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-opacity-20 transition transform hover:scale-105">
+                <i class="fas fa-clipboard-check text-4xl text-green-200 mb-4"></i>
+                <h3 class="text-xl font-bold text-white mb-2">Kehadiran</h3>
+                <p class="text-blue-100 text-sm">Sistem presensi real-time</p>
+            </div>
+
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-opacity-20 transition transform hover:scale-105">
+                <i class="fas fa-chart-line text-4xl text-yellow-200 mb-4"></i>
+                <h3 class="text-xl font-bold text-white mb-2">Grafik & Laporan</h3>
+                <p class="text-blue-100 text-sm">Laporan syawiran bulana</p>
+            </div>
+        </div>
+
+        <!-- Main Card -->
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-600 to-teal-500 p-8 text-white">
+                <h2 class="text-3xl font-bold mb-2">Selamat Datang!</h2>
+                <p class="text-blue-100">Silakan login untuk mengakses sistem</p>
+            </div>
+
+            <div class="p-8">
+                <!-- Login Accounts Info -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="border-2 border-blue-200 rounded-lg p-6">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-user-shield text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800 mb-2">Admin</h3>
+                        <p class="text-sm text-gray-600 mb-3"></p>
+                        <div class="bg-blue-50 rounded p-3 text-xs">
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-teal-200 rounded-lg p-6">
+                        <div class="bg-teal-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-user-tie text-teal-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800 mb-2">Santri Azzufar</h3>
+                        <p class="text-sm text-gray-600 mb-3"></p>
+                        <div class="bg-teal-50 rounded p-3 text-xs">
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-green-200 rounded-lg p-6">
+                        <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800 mb-2">Staff</h3>
+                        <p class="text-sm text-gray-600 mb-3"></p>
+                        <div class="bg-green-50 rounded p-3 text-xs">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Button -->
+                <div class="text-center">
+                    <a href="login.html" 
+                        class="inline-block bg-gradient-to-r from-blue-600 to-teal-500 text-white px-12 py-4 rounded-lg font-bold text-lg hover:from-blue-700 hover:to-teal-600 transition transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        Masuk ke Sistem
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="text-center mt-12 text-blue-100">
+            <p>© 2025 Azufar Management System. All rights reserved.</p>
+            <p class="text-sm mt-2">Version 1.0.0 - Production Ready</p>
+        </div>
+    </div>
+
+    <script>
+        // Auto redirect jika sudah login
+        window.addEventListener('DOMContentLoaded', function() {
+            const userSession = localStorage.getItem('userSession');
+            if (userSession) {
+                const user = JSON.parse(userSession);
+                const loginTime = new Date(user.loginTime);
+                const now = new Date();
+                const diff = now - loginTime;
+                const sessionTimeout = 30 * 60 * 1000; // 30 menit
+                
+                // Jika session masih valid, redirect ke dashboard
+                if (diff < sessionTimeout) {
+                    window.location.href = 'dashboard.html';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
